@@ -165,8 +165,8 @@
             }
 
             function _onFormAppeared() {
-                this.has_shown = false;
-                this.is_visible = false;
+                this.has_shown = true;
+                this.is_visible = true;
                 this.placeAppearPixel();
                 this.sendStatistics('show');
                 createCookie('engaga_seen_' + form_settings.campaign_uid, 'yes', form_settings.dont_show_again);
@@ -1037,7 +1037,7 @@
                         dialog.placeSubscribePixel();
                         dialog.sending_statistics = true;
                         dialog.sendStatistics('convert', function() {
-                            dialog.sending_statistics = true;
+                            dialog.sending_statistics = false;
                             if (dialog.redirectFunction) {
                                 dialog.redirectFunction();
                                 dialog.redirectFunction = null;
