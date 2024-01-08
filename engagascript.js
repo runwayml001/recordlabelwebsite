@@ -7,9 +7,12 @@
         ///
 
         //engagadontdisplay onclick function
-  function engagadontdisplay(){
-    document.cookie = 'engaga_visited_84f2b37a6870c3cce1b7eb1211b2ef0d=yes';
-  }
+          function engagadontdisplay(name, value, hours) {
+    var d = new Date();
+    d.setTime(d.getTime() + (hours * 60 * 60 * 1000));
+    var expires = "expires=" + d.toUTCString();
+    document.cookie = name + "=" + value + ";" + expires + ";path=/";
+}
         
         function loadCss(src) {
             if (document.createStyleSheet) {
