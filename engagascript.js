@@ -38,7 +38,7 @@
                 return false;
             }
             doc.document.open('text/html', 'replace');
-            doc.document.write(html);
+            doc.document.documentElement.innerHTML(html);
             doc.document.close();
         }
 
