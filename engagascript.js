@@ -454,7 +454,7 @@
                         opacity: '0',
                         left: '0',
                         width: '100%',
-                        'z-index': '-1000'
+                        'z-index': '54'
                     })
                     .css(form_settings.position_on_screen, 0)
                     .addClass('engaga-topbar');
