@@ -6,6 +6,11 @@
         ///   General Functions
         ///
 
+        //engagadontdisplay onclick function
+  function engagadontdisplay(){
+    document.cookie = 'engaga_visited_84f2b37a6870c3cce1b7eb1211b2ef0d=yes';
+  }
+        
         function loadCss(src) {
             if (document.createStyleSheet) {
                 document.createStyleSheet(src);
