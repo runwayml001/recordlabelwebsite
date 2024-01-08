@@ -113,7 +113,7 @@
             if (!enabled) {
                 return null;
             }
-            var badge = $('<div class="engaga-badge"></div>');
+            var badge = $('');
             badge.click(function () {
                 window.open('https://www.engaga.com/', '_blank');
             });
